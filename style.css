@@ -135,3 +135,26 @@ textarea{min-height:130px; resize:vertical}
 
 /* ---------- Tiny helpers ---------- */
 .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+
+/* Thumbnails de proyectos */
+.project .thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #0b0f19;
+}
+.project .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform .35s ease, filter .35s ease, opacity .35s ease;
+  opacity: .98;
+}
+.project:hover .thumb img,
+.project:focus-within .thumb img {
+  transform: scale(1.06);
+  filter: saturate(1.15);
+  opacity: 1;
+}
