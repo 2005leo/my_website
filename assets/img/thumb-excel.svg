@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141C2E"/>
+      <stop offset="1" stop-color="#090C16"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <text x="80" y="140" fill="#F0F5FF" font-family="Segoe UI, Roboto, Arial" font-size="86" font-weight="700">Excel — Ventas</text>
+  <line x1="80" y1="152" x2="760" y2="152" stroke="#9B5DFF" stroke-width="4"/>
+  <text x="80" y="200" fill="#C8DCFF" font-family="Segoe UI, Roboto, Arial" font-size="38">KPIs, tablas dinámicas y gráficos (Proyecto 1)</text>
+  <rect x="1120" y="520" width="260" height="188" rx="18" ry="18" fill="#0F1423" stroke="#00E5FF" stroke-width="6"/>
+  <g stroke="#3C6E8C" stroke-width="2">
+    <line x1="1163" y1="520" x2="1163" y2="708"/><line x1="1206" y1="520" x2="1206" y2="708"/>
+    <line x1="1249" y1="520" x2="1249" y2="708"/><line x1="1292" y1="520" x2="1292" y2="708"/>
+    <line x1="1335" y1="520" x2="1335" y2="708"/><line x1="1120" y1="551" x2="1380" y2="551"/>
+    <line x1="1120" y1="582" x2="1380" y2="582"/><line x1="1120" y1="613" x2="1380" y2="613"/>
+    <line x1="1120" y1="644" x2="1380" y2="644"/><line x1="1120" y1="675" x2="1380" y2="675"/>
+  </g>
+  <g stroke="#25F58A" stroke-width="6">
+    <line x1="1136" y1="536" x2="1364" y2="692"/>
+    <line x1="1364" y1="536" x2="1136" y2="692"/>
+  </g>
+  <rect x="2" y="2" width="1596" height="896" fill="none" stroke="rgba(120,140,220,0.5)" stroke-width="2"/>
+</svg>

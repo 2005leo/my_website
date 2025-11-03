@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141C2E"/>
+      <stop offset="1" stop-color="#090C16"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g4)"/>
+  <text x="80" y="140" fill="#F0F5FF" font-family="Segoe UI, Roboto, Arial" font-size="86" font-weight="700">Tableau — Soporte</text>
+  <line x1="80" y1="152" x2="860" y2="152" stroke="#9B5DFF" stroke-width="4"/>
+  <text x="80" y="200" fill="#C8DCFF" font-family="Segoe UI, Roboto, Arial" font-size="38">Matrices y tendencias interactivas (Proyecto 4)</text>
+  <g>
+    <circle cx="1140" cy="540" r="10" fill="#00E5FF"/>
+    <circle cx="1205" cy="540" r="10" fill="#9B5DFF"/>
+    <circle cx="1270" cy="540" r="16" fill="#25F58A"/>
+    <circle cx="1335" cy="540" r="10" fill="#FF7850"/>
+    <circle cx="1400" cy="540" r="10" fill="#C8C8FF"/>
+    <circle cx="1140" cy="605" r="10" fill="#9B5DFF"/>
+    <circle cx="1205" cy="605" r="10" fill="#25F58A"/>
+    <circle cx="1270" cy="605" r="16" fill="#00E5FF"/>
+    <circle cx="1335" cy="605" r="10" fill="#C8C8FF"/>
+    <circle cx="1400" cy="605" r="10" fill="#FF7850"/>
+    <circle cx="1140" cy="670" r="16" fill="#25F58A"/>
+    <circle cx="1205" cy="670" r="16" fill="#00E5FF"/>
+    <circle cx="1270" cy="670" r="22" fill="#9B5DFF"/>
+    <circle cx="1335" cy="670" r="16" fill="#00E5FF"/>
+    <circle cx="1400" cy="670" r="16" fill="#25F58A"/>
+    <circle cx="1140" cy="735" r="10" fill="#FF7850"/>
+    <circle cx="1205" cy="735" r="10" fill="#C8C8FF"/>
+    <circle cx="1270" cy="735" r="16" fill="#00E5FF"/>
+    <circle cx="1335" cy="735" r="10" fill="#25F58A"/>
+    <circle cx="1400" cy="735" r="10" fill="#9B5DFF"/>
+    <circle cx="1140" cy="800" r="10" fill="#C8C8FF"/>
+    <circle cx="1205" cy="800" r="10" fill="#FF7850"/>
+    <circle cx="1270" cy="800" r="16" fill="#25F58A"/>
+    <circle cx="1335" cy="800" r="10" fill="#9B5DFF"/>
+    <circle cx="1400" cy="800" r="10" fill="#00E5FF"/>
+  </g>
+  <rect x="2" y="2" width="1596" height="896" fill="none" stroke="rgba(120,140,220,0.5)" stroke-width="2"/>
+</svg>
