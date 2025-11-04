@@ -195,27 +195,54 @@
     <div class="container grid two-col">
       <div class="card">
         <h2 id="contact-title">Contact</h2>
-        <p class="muted">Have a challenge in mind? Tell me about your data and your goals. I’ll respond within 1–2 business days.</p>
-        <form id="contactForm" novalidate>
-          <label class="sr-only" for="name">Name</label>
-          <input id="name" name="name" placeholder="Your name" required />
-          <label class="sr-only" for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Email" required />
-          <label class="sr-only" for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your project…" required></textarea>
-          <button class="btn" type="submit"><span class="dot"></span> Send message</button>
-          <p id="formNote" class="muted" role="status" aria-live="polite"></p>
-        </form>
+        <p class="muted">Have a challenge in mind? Tell me about your data and your goals. I’ll respond within 1 or2 business days.</p>
+        <form id="contactForm" onsubmit="return sendMailto(event)" novalidate>
+  <!-- Honeypot anti-spam (oculto) -->
+  <input type="text" name="_hp" tabindex="-1" autocomplete="off"
+         style="position:absolute;left:-9999px;height:0;width:0;padding:0;border:0;"
+         aria-hidden="true">
+
+  <label class="sr-only" for="name">Nombre / Name</label>
+  <input id="name" name="name" type="text"
+         placeholder="Tu nombre / Your name"
+         autocomplete="name" required minlength="2" inputmode="text" />
+
+  <label class="sr-only" for="email">Email</label>
+  <input id="email" name="email" type="email"
+         placeholder="Email"
+         autocomplete="email" required inputmode="email" />
+
+  <label class="sr-only" for="message">Mensaje / Message</label>
+  <textarea id="message" name="message"
+            placeholder="Contame sobre tu proyecto… / Tell me about your project…"
+            autocomplete="on" required minlength="10" rows="5" spellcheck="true"></textarea>
+
+  <button class="btn" type="submit"><span class="dot"></span> Enviar / Send</button>
+  <p id="formNote" class="muted" role="status" aria-live="polite">
+    Respondo en 24–48 h. / I reply within 24–48 h.
+  </p>
+</form>
+
+<!-- Nota de privacidad -->
+<p class="muted" style="margin-top:.75rem;">
+  <small>
+    Usaré tu información solo para responder a esta consulta. No comparto tus datos con terceros. /
+    I will use your information only to reply to this inquiry. I do not share your data with third parties.
+  </small>
+</p>
+
+
       </div>
       <div class="card">
         <h3>Elsewhere</h3>
         <p class="muted">Links for fictional profile:</p>
         <div class="stack">
-          <a class="btn" href="https://github.com/2005leo" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/leonardo-aguero-ds" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="docs/CV-Leonardo.pdf" download>Download CV</a>
+  <a class="btn" href="https://github.com/2005leo" target="_blank" rel="noopener">GitHub</a>
+  <a class="btn" href="https://www.linkedin.com/in/leonardo-aguero-ds" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn" href="docs/CV-Leonardo.pdf" download>Descargar CV / Download CV</a>
+  <a class="btn" href="mailto:2005leo@gmail.com?subject=Contacto%20desde%20portfolio">Email</a>
+</div>
 
-        </div>
       </div>
     </div>
   </section>

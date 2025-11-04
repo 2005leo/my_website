@@ -40,3 +40,43 @@ const animateDots = () => {
   requestAnimationFrame(animateDots);
 };
 animateDots();
+
+// Mailto sender (bilingüe ES/EN) — Leo: 2005leo@gmail.com
+function sendMailto(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const note = document.getElementById("formNote");
+  const name = (form.name?.value || "").trim();
+  const email = (form.email?.value || "").trim();
+  const message = (form.message?.value || "").trim();
+
+  // Validación mínima
+  if (!name || !email || !message) {
+    note.textContent = "Por favor, completa nombre, email y mensaje. / Please fill name, email and message.";
+    return false;
+  }
+
+  // Construcción bilingüe de asunto y cuerpo
+  const subject = encodeURIComponent(`Contacto / Contact — ${name}`);
+  const bodyLines = [
+    `Nombre / Name: ${name}`,
+    `Email: ${email}`,
+    "",
+    "Mensaje / Message:",
+    message,
+    "",
+    "— Enviado desde el portfolio —"
+  ];
+  const body = encodeURIComponent(bodyLines.join("\n"));
+
+  // Destino (tu correo real)
+  const to = "2005leo@gmail.com";
+
+  // Disparar cliente de correo
+  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+
+  note.textContent = "Abriendo tu cliente de correo… Si no se abre, escribime a 2005leo@gmail.com. / Opening your mail client… If it doesn't open, email me at 2005leo@gmail.com.";
+  form.reset();
+  return false;
+}
