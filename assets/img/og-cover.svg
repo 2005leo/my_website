@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1C"/>
+      <stop offset="1" stop-color="#090C16"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="28%" r="90%">
+      <stop offset="0%" stop-color="#9B5DFF" stop-opacity=".65"/>
+      <stop offset="55%" stop-color="#00E5FF" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <rect x="6" y="6" width="1188" height="618" rx="20" ry="20"
+        fill="none" stroke="rgba(140,160,220,.35)" stroke-width="2"/>
+
+  <g font-family="Segoe UI, Roboto, Arial" fill="#EAF1FF">
+    <text x="80" y="220" font-size="64" font-weight="700">Leonardo Agüero</text>
+    <text x="80" y="278" font-size="28" fill="#BFD4FF">Data/Business Analyst · +AI</text>
+  </g>
+
+  <line x1="80" y1="300" x2="640" y2="300" stroke="#9B5DFF" stroke-width="4"/>
+
+  <g font-family="Segoe UI, Roboto, Arial" fill="#C8DCFF">
+    <text x="80" y="348" font-size="26">SQL · Excel · Power BI · Tableau · DAX · Visual Analytics</text>
+    <text x="80" y="386" font-size="22" fill="#92B6FF">Proyectos con enfoque en métricas, SLA y data storytelling</text>
+  </g>
+
+  <g opacity=".9">
+    <rect x="880" y="350" width="24" height="120" fill="#00E5FF" rx="6"/>
+    <rect x="914" y="300" width="24" height="170" fill="#9B5DFF" rx="6"/>
+    <rect x="948" y="410" width="24" height="60"  fill="#25F58A" rx="6"/>
+    <rect x="982" y="330" width="24" height="140" fill="#FF7E55" rx="6"/>
+    <rect x="1016" y="280" width="24" height="190" fill="#D7DDFF" rx="6"/>
+    <circle cx="960" cy="200" r="8" fill="#00E5FF"/>
+    <circle cx="1000" cy="200" r="8" fill="#9B5DFF"/>
+    <circle cx="1040" cy="200" r="12" fill="#25F58A"/>
+    <circle cx="1080" cy="200" r="8" fill="#FF7E55"/>
+  </g>
+</svg>
