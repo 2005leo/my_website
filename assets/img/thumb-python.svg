@@ -1,30 +1,106 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600" height="900" viewBox="0 0 1600 900">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#141C2E"/>
-      <stop offset="1" stop-color="#090C16"/>
+      <stop offset="0" stop-color="#141C2E" />
+      <stop offset="1" stop-color="#090C16" />
     </linearGradient>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <text x="80" y="140" fill="#F0F5FF" font-family="Segoe UI, Roboto, Arial" font-size="86" font-weight="700">
+
+  <!-- Fondo -->
+  <rect width="1600" height="900" fill="url(#bg)" />
+
+  <!-- Marco -->
+  <rect x="8" y="8" width="1584" height="884" rx="24" ry="24"
+        fill="none" stroke="rgba(140,160,220,0.45)" stroke-width="3" />
+
+  <!-- Título -->
+  <text x="80" y="160"
+        fill="#F0F5FF"
+        font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-size="86"
+        font-weight="700">
     Python — Churn
   </text>
-  <line x1="80" y1="152" x2="880" y2="152" stroke="#9B5DFF" stroke-width="4"/>
-  <text x="80" y="200" fill="#C8DCFF" font-family="Segoe UI, Roboto, Arial" font-size="38">
-    EDA + Logistic Regression & RandomForest
+
+  <!-- Subtítulo -->
+  <text x="80" y="220"
+        fill="#C8DCFF"
+        font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-size="34">
+    EDA · Logistic Regression · Random Forest
   </text>
 
-  <!-- ícono: serpiente + curva ROC estilizada -->
-  <g>
-    <!-- snake-like -->
-    <path d="M1120,540 q60,-80 120,0 q60,80 120,0" fill="none" stroke="#00E5FF" stroke-width="10" stroke-linecap="round"/>
-    <circle cx="1240" cy="520" r="6" fill="#25F58A"/>
-    <!-- ROC -->
-    <rect x="1120" y="600" width="360" height="220" rx="12" ry="12" fill="#0F1423" stroke="#9B5DFF" stroke-width="3"/>
-    <polyline points="1140,800 1460,620" fill="none" stroke="#25F58A" stroke-width="6"/>
-    <line x1="1140" y1="800" x2="1460" y2="800" stroke="#7A8DAA" stroke-width="3"/>
-    <line x1="1140" y1="800" x2="1140" y2="620" stroke="#7A8DAA" stroke-width="3"/>
-  </g>
+  <!-- Bloque curva ROC -->
+  <rect x="1040" y="340" width="420" height="260" rx="18" ry="18"
+        fill="#0F1423" stroke="#9B5DFF" stroke-width="3" />
+  <!-- Ejes -->
+  <line x1="1070" y1="570" x2="1430" y2="570"
+        stroke="#76829E" stroke-width="2" />
+  <line x1="1070" y1="370" x2="1070" y2="570"
+        stroke="#76829E" stroke-width="2" />
+  <!-- Diagonal -->
+  <line x1="1070" y1="570" x2="1430" y2="370"
+        stroke="#293246" stroke-width="2" stroke-dasharray="6 6" />
+  <!-- Curva ROC -->
+  <polyline points="1070,570 1150,520 1250,460 1350,410 1430,390"
+            fill="none" stroke="#25F58A" stroke-width="4" />
 
-  <rect x="2" y="2" width="1596" height="896" fill="none" stroke="rgba(120,140,220,0.5)" stroke-width="2"/>
+  <!-- Bloque código / features -->
+  <rect x="80" y="320" width="520" height="320" rx="18" ry="18"
+        fill="#0F1423" stroke="#00E5FF" stroke-width="2" />
+  <text x="110" y="365"
+        fill="#9B5DFF"
+        font-family="Consolas, Menlo, monospace"
+        font-size="24">
+    features = [
+  </text>
+  <text x="140" y="400"
+        fill="#C8DCFF"
+        font-family="Consolas, Menlo, monospace"
+        font-size="22">
+    "tenure_months",
+  </text>
+  <text x="140" y="430"
+        fill="#C8DCFF"
+        font-family="Consolas, Menlo, monospace"
+        font-size="22">
+    "monthly_charges",
+  </text>
+  <text x="140" y="460"
+        fill="#C8DCFF"
+        font-family="Consolas, Menlo, monospace"
+        font-size="22">
+    "contract_type",
+  </text>
+  <text x="140" y="490"
+        fill="#C8DCFF"
+        font-family="Consolas, Menlo, monospace"
+        font-size="22">
+    "support_tickets_90d",
+  </text>
+  <text x="140" y="520"
+        fill="#C8DCFF"
+        font-family="Consolas, Menlo, monospace"
+        font-size="22">
+    "app_logins_30d"
+  </text>
+  <text x="110" y="555"
+        fill="#9B5DFF"
+        font-family="Consolas, Menlo, monospace"
+        font-size="24">
+    ]
+  </text>
+
+  <!-- Icono "py" simple -->
+  <circle cx="880" cy="220" r="58"
+          fill="#0F1423" stroke="#00E5FF" stroke-width="3" />
+  <text x="846" y="235"
+        fill="#F0F5FF"
+        font-family="Segoe UI, Roboto, Arial, sans-serif"
+        font-size="40"
+        font-weight="700">
+    py
+  </text>
 </svg>
+
